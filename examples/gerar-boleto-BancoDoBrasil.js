@@ -4,7 +4,7 @@ const boleto = {
   banco: new Bancos.BancoBrasil(),
   pagador: {
     nome: 'José Bonifácio de Andrada',
-    registroNacional: '12345678',
+    registroNacional: '123.456.789-09', //Deve ser texto. Com ou sem pontuações. CPF inválido não aparece no boleto, validar antes
     endereco: {
       logradouro: 'Rua Pedro Lessa, 15',
       bairro: 'Centro',
@@ -14,8 +14,9 @@ const boleto = {
     }
   },
   instrucoes: ['Após o vencimento Mora dia R$ 1,59', 'Após o vencimento, multa de 2%'],
+  mensagens: ['Mensalidade 01/2021', 'Linha digitável', 'Próxima linha digitada de mensagem', 'Texto muito longo para não caber em uma única linha e testar se a função irá realizar a quebra da maneira correta sem interferir no layout do boleto. Mas ainda precisamos de mais texto.'],
   beneficiario: {
-    nome: 'Empresa Fictícia LTDA',
+    nome: 'TESTE',
     cnpj:'43576788000191',
     dadosBancarios: {
       carteira: '09',
