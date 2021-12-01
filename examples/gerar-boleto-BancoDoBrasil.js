@@ -20,12 +20,12 @@ const boleto = {
     cnpj:'43576788000191',
     dadosBancarios: {
       carteira: '09',
-      agencia: '18455',
+      agencia: '1855',
       agenciaDigito: '4',
       conta: '1277165',
       contaDigito: '1',
-      nossoNumero: '00000000061',
-      nossoNumeroDigito: '8'
+      nossoNumero: '31200070002025001',
+      nossoNumeroDigito: ''
     },
     endereco: {
       logradouro: 'Rua Pedro Lessa, 15',
@@ -36,13 +36,15 @@ const boleto = {
     }
   },
   boleto: {
-    numeroDocumento: '1001',
-    especieDocumento: 'DM',
-    valor: 110.00,
+    aceite: true,
+    numeroDocumento: '2025001',
+    especieDocumento: 'DS',
+    valor: 29,
+    deducoes: 12.02,
     datas: {
-      vencimento: '02-04-2020',
-      processamento: '02-04-2019',
-      documentos: '02-04-2019'
+      vencimento: '2021-12-03',
+      processamento: '2021-11-30',
+      documentos: '2021-11-30'
     }
   }
 };
